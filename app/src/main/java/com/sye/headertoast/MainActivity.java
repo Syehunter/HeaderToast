@@ -1,5 +1,6 @@
 package com.sye.headertoast;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,7 +20,15 @@ public class MainActivity extends AppCompatActivity {
         btn_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtils.showWithCustomIcon(MainActivity.this, R.mipmap.ic_launcher, "Just For Text");
+                ToastUtils.showWithCustomIcon(MainActivity.this, R.mipmap.sye, "--->Syehunter<---");
+            }
+        });
+
+        Button btn_next = (Button) findViewById(R.id.btn_next);
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
     }

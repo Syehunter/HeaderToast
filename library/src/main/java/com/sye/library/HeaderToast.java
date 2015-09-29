@@ -24,7 +24,7 @@ public class HeaderToast implements View.OnTouchListener {
     private final static int CLOSE = 0;
 
     private final static int ANIM_DURATION = 600;
-    private final static int SHOW_DURATION = 5000;
+    private final static int SHOW_DURATION = 2000;
 
     private final Context mContext;
     private View mHeaderToastView;

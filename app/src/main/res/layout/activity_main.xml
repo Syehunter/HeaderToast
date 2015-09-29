@@ -5,9 +5,24 @@
                 tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_next"
+        android:gravity="center"
+        android:text="next"
+        android:textColor="#FFFFFF"
+        android:background="#773355"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
         android:id="@+id/btn_show"
-        android:text="展示HeaderToast"
-        android:layout_width="wrap_content"
+        android:layout_above="@id/btn_next"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="3dp"
+        android:background="#773355"
+        android:gravity="center"
+        android:text="展示"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 </RelativeLayout>
